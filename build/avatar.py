@@ -49,7 +49,7 @@ GRID = [
 
 GRID_W = len(GRID[0])  # 31
 GRID_H = len(GRID)      # 32
-SCALE = 14              # 32 * 14 = 448 px high
+SCALE = 11              # 32 * 11 = 352 px — fits inside GitHub's circle crop
 CANVAS = 460            # GitHub avatar cap
 OUT = Path(__file__).parent.parent / "assets" / "avatar.png"
 

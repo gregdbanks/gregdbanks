@@ -8,16 +8,11 @@
 <a name="top"></a>
 <img src="./assets/banner.svg" alt="Greg Banks — Dad, Developer, Oklahoma City" width="100%" />
 
-<p align="center">
-  <a href="#status"><img src="https://img.shields.io/badge/-STATUS-FF3E7E?style=for-the-badge&labelColor=2D2A24&color=D88A7A" alt="Status"></a>
-  <a href="#stack"><img src="https://img.shields.io/badge/-STACK-5A6BFF?style=for-the-badge&labelColor=2D2A24&color=5A8C7C" alt="Stack"></a>
-  <a href="#ecosystems"><img src="https://img.shields.io/badge/-ECOSYSTEMS-FFD23F?style=for-the-badge&labelColor=2D2A24&color=E6A35B" alt="Ecosystems"></a>
-  <a href="#cartridges"><img src="https://img.shields.io/badge/-CARTRIDGES-6EE7B7?style=for-the-badge&labelColor=2D2A24&color=C8B987" alt="Cartridges"></a>
-  <a href="#stats"><img src="https://img.shields.io/badge/-STATS-F8F8F2?style=for-the-badge&labelColor=2D2A24&color=F8F8F2" alt="Stats"></a>
-  <a href="#connect"><img src="https://img.shields.io/badge/-CONNECT-FF3E7E?style=for-the-badge&labelColor=2D2A24&color=D88A7A" alt="Connect"></a>
-</p>
-
-<img src="./assets/divider.svg" alt="" width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gregdbanks/gregdbanks/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gregdbanks/gregdbanks/output/github-snake.svg" />
+  <img alt="Animated snake eating Greg's contribution graph" src="https://raw.githubusercontent.com/gregdbanks/gregdbanks/output/github-snake-dark.svg" width="100%" />
+</picture>
 
 <a name="status"></a>
 
@@ -69,14 +64,6 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/gregdbanks/gregdbanks/output/metrics.isocalendar.svg" alt="Isometric year of contributions" width="100%" />
 </p>
-
-<h3 align="center">— CONTRIBUTION SNAKE —</h3>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gregdbanks/gregdbanks/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gregdbanks/gregdbanks/output/github-snake.svg" />
-  <img alt="Animated snake eating Greg's contribution graph" src="https://raw.githubusercontent.com/gregdbanks/gregdbanks/output/github-snake-dark.svg" width="100%" />
-</picture>
 
 <img src="./assets/divider.svg" alt="" width="100%" />
 
