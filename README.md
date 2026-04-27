@@ -59,6 +59,13 @@
 
 > **One-liner.** I build and operate production systems — nine years of React, Node, and TypeScript, with a bias toward owning the full path from API design through deploy and observability. I've shipped consumer apps, internal platforms, and developer tooling at scale. _(The retro arcade theme on this page is a personal taste, not a job title.)_
 
+<h3 align="center">— CURRENTLY BUILDING —</h3>
+
+<p align="center">
+  <em>A learning platform that makes studying feel like a game.<br/>
+  My favorite thing to build right now.</em>
+</p>
+
 <p align="center">
   <a href="https://study.coffee">
     <img src="./assets/studybuddy-logo.svg" alt="StudyBuddy" width="128" height="128" />
