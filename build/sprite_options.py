@@ -34,7 +34,7 @@ BODY_HERO = [
     "....SSSSSS.........SSSSSS......",
 ]
 
-# Variant 2 — Casual developer. T-shirt + jeans, hands in pockets.
+# Variant 2 — Casual developer. T-shirt + jeans. Multiple arm poses below.
 BODY_DEV = [
     "..............###..............",
     ".............#####.............",
@@ -46,6 +46,67 @@ BODY_DEV = [
     "........BBBBBBBBBBBBBBB........",
     "........BBBBBBBBBBBBBBB........",
     "........BBBBBBBBBBBBBBB........",
+    ".........AAAAAAAAAAAAA.........",
+    ".........AAAAA.AAAAAAA.........",
+    ".........AAAA...AAAAAA.........",
+    ".........AAAA...AAAAAA.........",
+    ".........AAAA...AAAAAA.........",
+    "........SSSSS...SSSSSSS........",
+]
+
+# Three arm variants for sprite-dev. H = hand (parchment, same as head ink).
+# Variant DEV-A — arms hanging at sides, hands at hip level.
+BODY_DEV_ARMS_A = [
+    "..............###..............",
+    ".............#####.............",
+    ".......BBBBBBBBBBBBBBBBB.......",
+    "......BBBBBBBBBBBBBBBBBBB......",
+    "......BBBBBBBBBBBBBBBBBBB......",
+    "......BBBBBBBBBBBBBBBBBBB......",
+    "......BBBBBBBBBBBBBBBBBBB......",
+    "......BBBBBBBBBBBBBBBBBBB......",
+    "......BBBBBBBBBBBBBBBBBBB......",
+    "......HHHBBBBBBBBBBBBBHHH......",
+    ".........AAAAAAAAAAAAA.........",
+    ".........AAAAA.AAAAAAA.........",
+    ".........AAAA...AAAAAA.........",
+    ".........AAAA...AAAAAA.........",
+    ".........AAAA...AAAAAA.........",
+    "........SSSSS...SSSSSSS........",
+]
+
+# Variant DEV-B — hands in pockets, arms angled inward.
+BODY_DEV_ARMS_B = [
+    "..............###..............",
+    ".............#####.............",
+    ".......BBBBBBBBBBBBBBBBB.......",
+    "......BBBBBBBBBBBBBBBBBBB......",
+    "......BBBBBBBBBBBBBBBBBBB......",
+    "......BBBBBBBBBBBBBBBBBBB......",
+    "......BBBBBBBBBBBBBBBBBBB......",
+    "......BBBBBBBBBBBBBBBBBBB......",
+    ".......BBBBBBBBBBBBBBBBB.......",
+    "........BHHBBBBBBBBBHHB........",
+    ".........AAAAAAAAAAAAA.........",
+    ".........AAAAA.AAAAAAA.........",
+    ".........AAAA...AAAAAA.........",
+    ".........AAAA...AAAAAA.........",
+    ".........AAAA...AAAAAA.........",
+    "........SSSSS...SSSSSSS........",
+]
+
+# Variant DEV-C — arms held slightly out (relaxed mid-walk pose).
+BODY_DEV_ARMS_C = [
+    "..............###..............",
+    ".............#####.............",
+    ".......BBBBBBBBBBBBBBBBB.......",
+    "......BBBBBBBBBBBBBBBBBBB......",
+    ".....BBBBBBBBBBBBBBBBBBBBB.....",
+    ".....BBBBBBBBBBBBBBBBBBBBB.....",
+    ".....BBBBBBBBBBBBBBBBBBBBB.....",
+    "......BBBBBBBBBBBBBBBBBBB......",
+    "......BBBBBBBBBBBBBBBBBBB......",
+    ".....HHHBBBBBBBBBBBBBBBHHH.....",
     ".........AAAAAAAAAAAAA.........",
     ".........AAAAA.AAAAAAA.........",
     ".........AAAA...AAAAAA.........",
@@ -125,6 +186,18 @@ PRESETS = {
     "dev": {
         "grid": BODY_DEV,
         "colors": {"B": ACC2, "A": DIM, "S": SHADOW},
+    },
+    "dev-arms-a": {
+        "grid": BODY_DEV_ARMS_A,
+        "colors": {"B": ACC2, "A": DIM, "S": SHADOW, "H": INK},
+    },
+    "dev-arms-b": {
+        "grid": BODY_DEV_ARMS_B,
+        "colors": {"B": ACC2, "A": DIM, "S": SHADOW, "H": INK},
+    },
+    "dev-arms-c": {
+        "grid": BODY_DEV_ARMS_C,
+        "colors": {"B": ACC2, "A": DIM, "S": SHADOW, "H": INK},
     },
     "knight": {
         "grid": BODY_KNIGHT,

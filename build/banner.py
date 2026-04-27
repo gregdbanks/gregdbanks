@@ -107,15 +107,16 @@ def cloud(x_start: int, y: int, dur: float, palette: str = INK, opacity: float =
 
 
 def sprite() -> str:
-    """Pixelated logo head + casual-dev body. Combined 31w x 48h grid."""
+    """Pixelated logo head + casual-dev body with hands-in-pockets pose."""
     from avatar import GRID as HEAD
-    from sprite_options import BODY_DEV as BODY
+    from sprite_options import BODY_DEV_ARMS_B as BODY
     s = 2  # scale
     cmap = {
         "#": INK,      # head + neck (parchment)
         "B": ACC2,     # t-shirt (wheat)
         "A": DIM,      # jeans (smoke)
         "S": SHADOW,   # shoes
+        "H": INK,      # hands (parchment)
     }
     out = ['<g id="sprite-art">']
     for ry, row in enumerate(HEAD):
