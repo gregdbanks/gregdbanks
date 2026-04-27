@@ -59,16 +59,20 @@
 
 > **One-liner.** I build and operate production systems — nine years of React, Node, and TypeScript, with a bias toward owning the full path from API design through deploy and observability. I've shipped consumer apps, internal platforms, and developer tooling at scale. _(The retro arcade theme on this page is a personal taste, not a job title.)_
 
+<h3 align="center">— FLAGSHIP —</h3>
+
 <p align="center">
-  <a href="https://github.com/gregdbanks"><img src="https://img.shields.io/badge/-GITHUB-FF3E7E?style=for-the-badge&logo=github&logoColor=F0E8D0&labelColor=2D2A24" alt="GitHub" /></a>
-  &nbsp;
-  <a href="https://study.coffee"><img src="https://img.shields.io/badge/-STUDY.COFFEE-5A6BFF?style=for-the-badge&logo=bookstack&logoColor=F0E8D0&labelColor=2D2A24" alt="StudyBuddy — flagship learning platform" /></a>
-  &nbsp;
-  <a href="https://github.com/gregdbanks?tab=repositories&q=&type=public&language=&sort=stargazers"><img src="https://img.shields.io/badge/-OPEN_TO_COLLABS-6EE7B7?style=for-the-badge&logo=githubsponsors&logoColor=2D2A24&labelColor=2D2A24" alt="Open to collabs" /></a>
+  <a href="https://study.coffee">
+    <img src="https://img.shields.io/badge/%E2%96%B6_VISIT_STUDY.COFFEE-2D2A24?style=for-the-badge&labelColor=D88A7A&color=2D2A24" alt="Visit study.coffee — StudyBuddy" />
+  </a>
 </p>
 
 <p align="center">
-  <a href="#top"><img src="https://img.shields.io/badge/%E2%86%91_BACK_TO_TOP-0F0F1B?style=for-the-badge&labelColor=5A6BFF&color=0F0F1B" alt="Back to top" /></a>
+  <sub>Self-hosted learning platform — spaced-repetition flashcards, exam microservice,<br/>and progress tracking. Built to outlast a subscription.</sub>
+</p>
+
+<p align="center">
+  <a href="#top"><img src="https://img.shields.io/badge/%E2%86%91_BACK_TO_TOP-2D2A24?style=for-the-badge&labelColor=5A8C7C&color=2D2A24" alt="Back to top" /></a>
 </p>
 
 <!--
