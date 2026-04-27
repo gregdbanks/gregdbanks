@@ -205,49 +205,6 @@ def title_block() -> str:
     return "".join(out)
 
 
-def coin_counter() -> str:
-    """Top-left HUD showing contribution count, like an arcade score panel."""
-    x, y = 24, 24
-    out = [rect(x - 6, y - 6, 250, 36, PANEL),
-           rect(x - 6, y - 6, 250, 2, PRIM),
-           rect(x - 6, y + 28, 250, 2, PRIM),
-           rect(x - 6, y - 6, 2, 36, PRIM),
-           rect(x + 244 - 2, y - 6, 2, 36, PRIM)]
-    # animated coin
-    coin_x, coin_y = x + 4, y + 4
-    out.append(
-        f'<g transform="translate({coin_x} {coin_y})">'
-        f'<animateTransform attributeName="transform" type="translate" '
-        f'values="{coin_x} {coin_y}; {coin_x} {coin_y - 2}; {coin_x} {coin_y}" '
-        f'dur="0.6s" repeatCount="indefinite"/>'
-        + rect(2, 2, 12, 12, WARN)
-        + rect(4, 0, 8, 16, WARN)
-        + rect(0, 4, 16, 8, WARN)
-        + rect(6, 4, 4, 8, BG)
-        + f'</g>'
-    )
-    out.append(pixfont.render("CONTRIBS X 5173", x + 30, y + 4, 2, INK))
-    return "".join(out)
-
-
-def hud_top_right() -> str:
-    """Top-right HUD: 'P1 · 1CC' arcade-style player tag."""
-    x, y = W - 24 - 220, 24
-    out = [rect(x, y - 6, 220, 36, PANEL),
-           rect(x, y - 6, 220, 2, ACC1),
-           rect(x, y + 28, 220, 2, ACC1),
-           rect(x, y - 6, 2, 36, ACC1),
-           rect(x + 218, y - 6, 2, 36, ACC1)]
-    out.append(pixfont.render("P1   READY", x + 14, y + 4, 2, INK))
-    # blinker
-    out.append(
-        f'<rect x="{x + 200}" y="{y + 4}" width="10" height="14" fill="{ACC2}">'
-        f'<animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>'
-        f'</rect>'
-    )
-    return "".join(out)
-
-
 def build() -> str:
     body = []
     # hard background
@@ -275,10 +232,6 @@ def build() -> str:
 
     # walking sprite at horizon
     body.append(walking_sprite())
-
-    # HUD
-    body.append(coin_counter())
-    body.append(hud_top_right())
 
     # Outer pixel border (4 corners only — keeps it light)
     bw = 4
