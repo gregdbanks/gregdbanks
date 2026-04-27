@@ -40,33 +40,6 @@
 
 <img src="./assets/divider.svg" alt="" width="100%" />
 
-<a name="stats"></a>
-
-<h2 align="center">— ARCADE STATS —</h2>
-
-<p align="center">
-  <a href="https://github.com/gregdbanks">
-    <img height="180" src="https://github-readme-stats.vercel.app/api?username=gregdbanks&include_all_commits=true&count_private=true&show_icons=true&hide_border=true&bg_color=2D2A24&title_color=5A8C7C&text_color=F0E8D0&icon_color=D88A7A&ring_color=C8B987&hide_rank=false" alt="Greg's GitHub stats">
-  </a>
-  <a href="https://github.com/gregdbanks">
-    <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gregdbanks&layout=compact&hide_border=true&langs_count=8&bg_color=2D2A24&title_color=E6A35B&text_color=F0E8D0" alt="Top languages">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/gregdbanks">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=gregdbanks&hide_border=true&background=2D2A24&stroke=5A8C7C&ring=D88A7A&fire=E6A35B&currStreakLabel=C8B987&dates=F0E8D0&sideLabels=F0E8D0&currStreakNum=F0E8D0&sideNums=F0E8D0&currStreakBackground=2D2A24&theme=transparent" alt="Streak stats" />
-  </a>
-</p>
-
-<h3 align="center">— ISOMETRIC YEAR —</h3>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/gregdbanks/gregdbanks/output/metrics.isocalendar.svg" alt="Isometric year of contributions" width="100%" />
-</p>
-
-<img src="./assets/divider.svg" alt="" width="100%" />
-
 <h2 align="center">— NOW FORGING —</h2>
 
 <table align="center" border="0" cellpadding="14" cellspacing="0">
