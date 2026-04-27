@@ -62,7 +62,7 @@
 <p align="center">
   <a href="https://github.com/gregdbanks"><img src="https://img.shields.io/badge/-GITHUB-FF3E7E?style=for-the-badge&logo=github&logoColor=F0E8D0&labelColor=2D2A24" alt="GitHub" /></a>
   &nbsp;
-  <a href="https://gregbanks.it"><img src="https://img.shields.io/badge/-GREGBANKS.IT-5A6BFF?style=for-the-badge&logo=safari&logoColor=F0E8D0&labelColor=2D2A24" alt="Personal site" /></a>
+  <a href="https://study.coffee"><img src="https://img.shields.io/badge/-STUDY.COFFEE-5A6BFF?style=for-the-badge&logo=bookstack&logoColor=F0E8D0&labelColor=2D2A24" alt="StudyBuddy — flagship learning platform" /></a>
   &nbsp;
   <a href="mailto:gregdbanks20053@gmail.com"><img src="https://img.shields.io/badge/-EMAIL-FFD23F?style=for-the-badge&logo=gmail&logoColor=2D2A24&labelColor=2D2A24" alt="Email" /></a>
   &nbsp;

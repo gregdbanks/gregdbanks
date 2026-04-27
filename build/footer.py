@@ -88,7 +88,7 @@ def build() -> str:
     chips_y = y2 + 7 * s2 + 36
     out.append(chips_centered_row(chips_y, [
         ("@GREGDBANKS", ACC1),
-        ("GREGBANKS.IT", PRIM),
+        ("STUDY.COFFEE", PRIM),
         ("EMAIL", WARN),
         ("OPEN TO COLLABS", ACC2),
     ]))
