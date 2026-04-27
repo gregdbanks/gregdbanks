@@ -89,7 +89,6 @@ def build() -> str:
     out.append(chips_centered_row(chips_y, [
         ("@GREGDBANKS", ACC1),
         ("STUDY.COFFEE", PRIM),
-        ("EMAIL", WARN),
         ("OPEN TO COLLABS", ACC2),
     ]))
 
