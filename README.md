@@ -59,16 +59,15 @@
 
 > **One-liner.** I build and operate production systems — nine years of React, Node, and TypeScript, with a bias toward owning the full path from API design through deploy and observability. I've shipped consumer apps, internal platforms, and developer tooling at scale. _(The retro arcade theme on this page is a personal taste, not a job title.)_
 
-<h3 align="center">— FLAGSHIP —</h3>
-
 <p align="center">
   <a href="https://study.coffee">
-    <img src="https://img.shields.io/badge/%E2%96%B6_VISIT_STUDY.COFFEE-2D2A24?style=for-the-badge&labelColor=D88A7A&color=2D2A24" alt="Visit study.coffee — StudyBuddy" />
+    <img src="./assets/studybuddy-logo.svg" alt="StudyBuddy" width="128" height="128" />
   </a>
 </p>
 
 <p align="center">
-  <sub>Self-hosted learning platform — spaced-repetition flashcards, exam microservice,<br/>and progress tracking. Built to outlast a subscription.</sub>
+  <a href="https://study.coffee"><b>StudyBuddy</b></a><br/>
+  <sub>Self-hosted spaced-repetition. Built to outlast a subscription.</sub>
 </p>
 
 <p align="center">

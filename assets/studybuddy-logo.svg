@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0a0820"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="32" height="32" fill="url(#bg)"/>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       STEAM — 2 continuous S-curve wisps (connected, flowing)
+       Each wisp is a 2-pixel-wide ribbon with a gradient
+       ═══════════════════════════════════════════════════════════ -->
+
+  <!-- LEFT S-CURVE WISP (x=10-12) — starts y=8, rises to y=2 -->
+  <rect x="11" y="8" width="1" height="1" fill="#e0e7ff"/>
+  <rect x="12" y="8" width="1" height="1" fill="#a5b4fc"/>
+  <rect x="11" y="7" width="1" height="1" fill="#c7d2fe"/>
+  <rect x="10" y="7" width="1" height="1" fill="#818cf8"/>
+  <rect x="10" y="6" width="1" height="1" fill="#a5b4fc"/>
+  <rect x="11" y="6" width="1" height="1" fill="#818cf8"/>
+  <rect x="11" y="5" width="1" height="1" fill="#a5b4fc"/>
+  <rect x="12" y="5" width="1" height="1" fill="#818cf8"/>
+  <rect x="12" y="4" width="1" height="1" fill="#818cf8"/>
+  <rect x="11" y="4" width="1" height="1" fill="#6366f1"/>
+  <rect x="11" y="3" width="1" height="1" fill="#6366f1"/>
+  <rect x="10" y="3" width="1" height="1" fill="#4f46e5"/>
+
+  <!-- RIGHT S-CURVE WISP (x=16-18) — mirrored, starts y=8, rises to y=2 -->
+  <rect x="16" y="8" width="1" height="1" fill="#a5b4fc"/>
+  <rect x="17" y="8" width="1" height="1" fill="#e0e7ff"/>
+  <rect x="18" y="8" width="1" height="1" fill="#c7d2fe"/>
+  <rect x="18" y="7" width="1" height="1" fill="#c7d2fe"/>
+  <rect x="17" y="7" width="1" height="1" fill="#a5b4fc"/>
+  <rect x="17" y="6" width="1" height="1" fill="#a5b4fc"/>
+  <rect x="16" y="6" width="1" height="1" fill="#818cf8"/>
+  <rect x="16" y="5" width="1" height="1" fill="#818cf8"/>
+  <rect x="17" y="5" width="1" height="1" fill="#6366f1"/>
+  <rect x="17" y="4" width="1" height="1" fill="#6366f1"/>
+  <rect x="18" y="4" width="1" height="1" fill="#4f46e5"/>
+  <rect x="18" y="3" width="1" height="1" fill="#4f46e5"/>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       CUP — Mug shape, light from top-left
+       Body: cols 8-19 (12 wide), rows 10-21
+       Handle: cols 20-24 (5 wide), rows 13-19 (7 tall)
+       Saucer: cols 5-25 (21 wide), rows 22-24
+       ═══════════════════════════════════════════════════════════ -->
+
+  <!-- ROW 10 — top outline curve (rim outer edge) -->
+  <rect x="9" y="10" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="10" y="10" width="8" height="1" fill="#312e81"/>
+  <rect x="18" y="10" width="1" height="1" fill="#1e1b4b"/>
+
+  <!-- ROW 11 — rim highlight band (the top rim catches the most light) -->
+  <rect x="8" y="11" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="9" y="11" width="1" height="1" fill="#c7d2fe"/>
+  <rect x="10" y="11" width="7" height="1" fill="#a5b4fc"/>
+  <rect x="17" y="11" width="1" height="1" fill="#818cf8"/>
+  <rect x="18" y="11" width="1" height="1" fill="#6366f1"/>
+  <rect x="19" y="11" width="1" height="1" fill="#1e1b4b"/>
+
+  <!-- ROW 12 — cup opening interior (shadow, implying depth) -->
+  <rect x="8" y="12" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="9" y="12" width="1" height="1" fill="#312e81"/>
+  <rect x="10" y="12" width="8" height="1" fill="#1c0a00"/>
+  <rect x="18" y="12" width="1" height="1" fill="#312e81"/>
+  <rect x="19" y="12" width="1" height="1" fill="#1e1b4b"/>
+
+  <!-- ROW 13 — top of body (just below rim, slight darker line) + handle starts -->
+  <rect x="8" y="13" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="9" y="13" width="1" height="1" fill="#818cf8"/>
+  <rect x="10" y="13" width="8" height="1" fill="#4f46e5"/>
+  <rect x="18" y="13" width="1" height="1" fill="#3730a3"/>
+  <rect x="19" y="13" width="1" height="1" fill="#1e1b4b"/>
+  <!-- Handle top -->
+  <rect x="20" y="13" width="5" height="1" fill="#4f46e5"/>
+  <rect x="20" y="13" width="1" height="1" fill="#6366f1"/>
+  <rect x="24" y="13" width="1" height="1" fill="#3730a3"/>
+
+  <!-- ROW 14 — cup body + handle -->
+  <rect x="8" y="14" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="9" y="14" width="1" height="1" fill="#a5b4fc"/>
+  <rect x="10" y="14" width="1" height="1" fill="#6366f1"/>
+  <rect x="11" y="14" width="6" height="1" fill="#6366f1"/>
+  <rect x="17" y="14" width="1" height="1" fill="#4f46e5"/>
+  <rect x="18" y="14" width="1" height="1" fill="#4338ca"/>
+  <rect x="19" y="14" width="1" height="1" fill="#1e1b4b"/>
+  <!-- Handle: left edge, gap, right edge -->
+  <rect x="20" y="14" width="1" height="1" fill="#6366f1"/>
+  <rect x="21" y="14" width="1" height="1" fill="#4f46e5"/>
+  <rect x="22" y="14" width="1" height="1" fill="#4338ca"/>
+  <rect x="23" y="14" width="1" height="1" fill="#4338ca"/>
+  <rect x="24" y="14" width="1" height="1" fill="#312e81"/>
+
+  <!-- ROW 15 — cup body + handle (opening starts inside handle) + GLARE -->
+  <rect x="8" y="15" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="9" y="15" width="1" height="1" fill="#818cf8"/>
+  <rect x="10" y="15" width="1" height="1" fill="#c7d2fe"/>
+  <rect x="11" y="15" width="1" height="1" fill="#c7d2fe"/>
+  <rect x="12" y="15" width="1" height="1" fill="#818cf8"/>
+  <rect x="13" y="15" width="4" height="1" fill="#4f46e5"/>
+  <rect x="17" y="15" width="1" height="1" fill="#4f46e5"/>
+  <rect x="18" y="15" width="1" height="1" fill="#4338ca"/>
+  <rect x="19" y="15" width="1" height="1" fill="#1e1b4b"/>
+  <!-- Handle: outer left, inner (bg), outer right -->
+  <rect x="20" y="15" width="1" height="1" fill="#6366f1"/>
+  <rect x="24" y="15" width="1" height="1" fill="#312e81"/>
+
+  <!-- ROW 16 — middle of cup (GLARE continues), middle of handle opening -->
+  <rect x="8" y="16" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="9" y="16" width="1" height="1" fill="#818cf8"/>
+  <rect x="10" y="16" width="1" height="1" fill="#a5b4fc"/>
+  <rect x="11" y="16" width="1" height="1" fill="#818cf8"/>
+  <rect x="12" y="16" width="5" height="1" fill="#4f46e5"/>
+  <rect x="17" y="16" width="1" height="1" fill="#4f46e5"/>
+  <rect x="18" y="16" width="1" height="1" fill="#4338ca"/>
+  <rect x="19" y="16" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="20" y="16" width="1" height="1" fill="#4f46e5"/>
+  <rect x="24" y="16" width="1" height="1" fill="#312e81"/>
+
+  <!-- ROW 17 — cup body continues -->
+  <rect x="8" y="17" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="9" y="17" width="1" height="1" fill="#6366f1"/>
+  <rect x="10" y="17" width="1" height="1" fill="#4f46e5"/>
+  <rect x="11" y="17" width="6" height="1" fill="#4f46e5"/>
+  <rect x="17" y="17" width="1" height="1" fill="#4338ca"/>
+  <rect x="18" y="17" width="1" height="1" fill="#3730a3"/>
+  <rect x="19" y="17" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="20" y="17" width="1" height="1" fill="#4f46e5"/>
+  <rect x="24" y="17" width="1" height="1" fill="#312e81"/>
+
+  <!-- ROW 18 — cup body -->
+  <rect x="8" y="18" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="9" y="18" width="1" height="1" fill="#6366f1"/>
+  <rect x="10" y="18" width="1" height="1" fill="#4f46e5"/>
+  <rect x="11" y="18" width="6" height="1" fill="#4338ca"/>
+  <rect x="17" y="18" width="1" height="1" fill="#3730a3"/>
+  <rect x="18" y="18" width="1" height="1" fill="#312e81"/>
+  <rect x="19" y="18" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="20" y="18" width="1" height="1" fill="#4338ca"/>
+  <rect x="24" y="18" width="1" height="1" fill="#312e81"/>
+
+  <!-- ROW 19 — cup body (handle closes) -->
+  <rect x="8" y="19" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="9" y="19" width="1" height="1" fill="#4f46e5"/>
+  <rect x="10" y="19" width="1" height="1" fill="#4338ca"/>
+  <rect x="11" y="19" width="6" height="1" fill="#4338ca"/>
+  <rect x="17" y="19" width="1" height="1" fill="#3730a3"/>
+  <rect x="18" y="19" width="1" height="1" fill="#312e81"/>
+  <rect x="19" y="19" width="1" height="1" fill="#1e1b4b"/>
+  <!-- Handle bottom -->
+  <rect x="20" y="19" width="5" height="1" fill="#4338ca"/>
+  <rect x="20" y="19" width="1" height="1" fill="#4f46e5"/>
+  <rect x="24" y="19" width="1" height="1" fill="#1e1b4b"/>
+
+  <!-- ROW 20 — cup near base -->
+  <rect x="8" y="20" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="9" y="20" width="1" height="1" fill="#4338ca"/>
+  <rect x="10" y="20" width="1" height="1" fill="#3730a3"/>
+  <rect x="11" y="20" width="6" height="1" fill="#3730a3"/>
+  <rect x="17" y="20" width="1" height="1" fill="#312e81"/>
+  <rect x="18" y="20" width="1" height="1" fill="#312e81"/>
+  <rect x="19" y="20" width="1" height="1" fill="#1e1b4b"/>
+
+  <!-- ROW 21 — cup base lip -->
+  <rect x="9" y="21" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="10" y="21" width="1" height="1" fill="#312e81"/>
+  <rect x="11" y="21" width="6" height="1" fill="#312e81"/>
+  <rect x="17" y="21" width="1" height="1" fill="#312e81"/>
+  <rect x="18" y="21" width="1" height="1" fill="#1e1b4b"/>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SAUCER — 3 rows, ellipse shape
+       ═══════════════════════════════════════════════════════════ -->
+
+  <!-- ROW 22 — saucer top surface (catches light from cup base) -->
+  <rect x="6" y="22" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="7" y="22" width="1" height="1" fill="#818cf8"/>
+  <rect x="8" y="22" width="14" height="1" fill="#6366f1"/>
+  <rect x="22" y="22" width="1" height="1" fill="#4f46e5"/>
+  <rect x="23" y="22" width="1" height="1" fill="#4338ca"/>
+  <rect x="24" y="22" width="1" height="1" fill="#1e1b4b"/>
+
+  <!-- ROW 23 — saucer edge / side -->
+  <rect x="5" y="23" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="6" y="23" width="1" height="1" fill="#4f46e5"/>
+  <rect x="7" y="23" width="1" height="1" fill="#4338ca"/>
+  <rect x="8" y="23" width="16" height="1" fill="#3730a3"/>
+  <rect x="24" y="23" width="1" height="1" fill="#312e81"/>
+  <rect x="25" y="23" width="1" height="1" fill="#1e1b4b"/>
+
+  <!-- ROW 24 — saucer bottom (shadow edge) -->
+  <rect x="6" y="24" width="1" height="1" fill="#1e1b4b"/>
+  <rect x="7" y="24" width="17" height="1" fill="#312e81"/>
+  <rect x="24" y="24" width="1" height="1" fill="#1e1b4b"/>
+
+  <!-- ROW 25 — contact shadow (subtle, under saucer) -->
+  <rect x="8" y="25" width="15" height="1" fill="#0a0820"/>
+</svg>
