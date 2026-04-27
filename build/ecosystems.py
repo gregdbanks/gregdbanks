@@ -270,14 +270,14 @@ def build() -> str:
     out.append(ecosystem(
         y=560,
         accent=ACC2,
-        code="03.MIND",
-        name="AI TOOLING & LEARNING",
+        code="03.LRN",
+        name="STUDY & LEARNING TOOLS",
         blurb_lines=[
-            "AGENTIC LEARNING PLATFORM, FLASHCARD ENGINE,",
-            "AND PORTABLE CLAUDE-CODE WORKFLOW TOOLING.",
-            "AI THAT EARNS ITS PLACE IN THE LOOP.",
+            "SELF-HOSTED LEARNING PLATFORM, SPACED-REPETITION",
+            "FLASHCARD ENGINE, EXAM MICROSERVICE, AND PROGRESS",
+            "TRACKING. BUILT TO OUTLAST A SUBSCRIPTION.",
         ],
-        stack=["CLAUDE", "MCP", "TYPESCRIPT", "PYTHON", "NODE"],
+        stack=["TYPESCRIPT", "NODE", "PYTHON", "MONGODB", "REACT"],
         icon_fn=icon_ai,
         repo_count_label="6 REPOS",
     ))

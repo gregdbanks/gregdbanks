@@ -106,33 +106,54 @@ def screen_voxflow(x, y, w, h):
     return "".join(out)
 
 
-def screen_claude(x, y, w, h):
-    """Two terminal-like panels with connecting lines."""
-    s = 4
+def screen_perf(x, y, w, h):
+    """A line chart showing perf gains."""
     out = []
-    # Two panels
-    p1 = (x + 10, y + 10, 80, h - 20)
-    p2 = (x + w - 90, y + 10, 80, h - 20)
-    for px, py, pw, ph in [p1, p2]:
-        out += [rect(px, py, pw, ph, "#10103A"),
-                rect(px, py, pw, 2, ACC1),
-                rect(px, py + ph - 2, pw, 2, ACC1),
-                rect(px, py, 2, ph, ACC1),
-                rect(px + pw - 2, py, 2, ph, ACC1)]
-        # tiny line items
-        for i, lw in enumerate([40, 24, 56, 32, 18, 48, 28]):
-            ly = py + 10 + i * 8
-            if ly + 4 < py + ph - 6:
-                out.append(rect(px + 6, ly, lw, 2, ACC2 if i % 2 else PRIM))
-    # connecting flow
-    cy = y + h // 2
-    for i, dx in enumerate(range(96, w - 96, 16)):
-        out.append(
-            f'<rect x="{x + dx}" y="{cy - 2}" width="8" height="4" fill="{WARN}" opacity="0.5">'
-            f'<animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" '
-            f'begin="{i * 0.15}s" repeatCount="indefinite"/>'
-            f'</rect>'
-        )
+    # axes
+    ax_x, ax_y = x + 16, y + 16
+    aw, ah = w - 32, h - 32
+    out.append(rect(ax_x, ax_y + ah, aw, 2, INK))
+    out.append(rect(ax_x, ax_y, 2, ah, INK))
+    # gridlines
+    for i in range(1, 4):
+        gy = ax_y + (ah * i // 4)
+        for gx in range(ax_x + 8, ax_x + aw, 12):
+            out.append(rect(gx, gy, 4, 1, DIM))
+    # before line (descending zigzag, magenta)
+    pts_before = [(0.05, 0.25), (0.20, 0.30), (0.35, 0.45), (0.50, 0.55),
+                  (0.65, 0.65), (0.80, 0.78), (0.95, 0.85)]
+    pts_after = [(0.05, 0.20), (0.20, 0.18), (0.35, 0.20), (0.50, 0.22),
+                 (0.65, 0.20), (0.80, 0.21), (0.95, 0.22)]
+    def plot(pts, color):
+        rs = []
+        for i in range(len(pts) - 1):
+            x1 = ax_x + int(pts[i][0] * aw)
+            y1 = ax_y + int(pts[i][1] * ah)
+            x2 = ax_x + int(pts[i + 1][0] * aw)
+            y2 = ax_y + int(pts[i + 1][1] * ah)
+            rs.append(
+                f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" '
+                f'stroke="{color}" stroke-width="3"/>'
+            )
+        for px, py in pts:
+            cx = ax_x + int(px * aw) - 3
+            cy = ax_y + int(py * ah) - 3
+            rs.append(rect(cx, cy, 6, 6, color))
+        return "".join(rs)
+    out.append(plot(pts_before, ACC1))
+    out.append(plot(pts_after, ACC2))
+    # legend
+    out.append(rect(x + w - 88, y + 12, 8, 4, ACC1))
+    out.append(pixfont.render("BEFORE", x + w - 76, y + 10, 1, INK))
+    out.append(rect(x + w - 88, y + 24, 8, 4, ACC2))
+    out.append(pixfont.render("AFTER", x + w - 76, y + 22, 1, INK))
+    # animated bouncing dot on after-line
+    out.append(
+        f'<circle cx="{ax_x + 30}" cy="{ax_y + int(0.20 * ah)}" r="4" fill="{INK}">'
+        f'<animate attributeName="cx" values="{ax_x + 30};{ax_x + aw - 20};{ax_x + 30}" '
+        f'dur="3s" repeatCount="indefinite"/>'
+        f'</circle>'
+    )
     return "".join(out)
 
 
@@ -314,11 +335,11 @@ def build() -> str:
             "LOCAL WHISPER, 500MS LATENCY.",
             "MIT-LICENSED, NO CLOUD.",
         ], ACC1, screen_voxflow),
-        ("CLAUDE-CFG-UI", "TYPESCRIPT", [
-            "VISUAL EDITOR FOR THE",
-            "CLAUDE CODE GLOBAL CONFIG.",
-            "DROP-IN, REVERSIBLE EDITS.",
-        ], PRIM, screen_claude),
+        ("REACT-PERF", "JAVASCRIPT", [
+            "WORKED EXAMPLES OF MEMO,",
+            "USECALLBACK, AND VIRTUALIZATION",
+            "ON A 10K-ROW LIST.",
+        ], PRIM, screen_perf),
         ("MIND-MAP", "TYPESCRIPT", [
             "VISUAL CONCEPT NETWORK",
             "FOR STUDYING. OFFLINE-FIRST,",

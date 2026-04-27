@@ -137,7 +137,7 @@ def build() -> str:
         ("LANGUAGES", ACC1, PRIM, ["TYPESCRIPT", "JAVASCRIPT", "PYTHON", "RUST"]),
         ("FRONT-END", PRIM, ACC1, ["REACT", "VITE", "PHASER", "ELECTRON"]),
         ("BACK-END", WARN, WARN, ["NODE.JS", "EXPRESS", "MONGODB", "JWT"]),
-        ("PLATFORM & AI", ACC2, ACC2, ["AWS", "VERCEL", "GH ACTIONS", "CLAUDE / MCP"]),
+        ("PLATFORM & OPS", ACC2, ACC2, ["AWS", "VERCEL", "GH ACTIONS", "DOCKER"]),
     ]
 
     column_chips = []

@@ -23,7 +23,7 @@
 
 <img src="./assets/player-card.svg" alt="Player status card: Greg Banks · Full-Stack Engineer · Guild @Flogistix · OKC" width="100%" />
 
-> **One-liner.** I build local-first developer tools, retro-themed creative software, and AI-augmented learning systems. Nine years of shipping React, Node, and TypeScript at scale; lately spending evenings carving pixel-art editors and agentic workflows on top of Claude.
+> **One-liner.** I build local-first developer tools, retro-themed creative software, and self-hosted learning platforms. Nine years of shipping React, Node, and TypeScript at scale; lately spending evenings carving pixel-art editors and offline-first dev tooling.
 
 <img src="./assets/divider.svg" alt="" width="100%" />
 
@@ -35,7 +35,7 @@
 
 <a name="ecosystems"></a>
 
-<img src="./assets/ecosystems.svg" alt="Three private project ecosystems: local-first dev stack, pixel art & game-craft, AI tooling & learning" width="100%" />
+<img src="./assets/ecosystems.svg" alt="Three private project ecosystems: local-first dev stack, pixel art and game-craft, study and learning tools" width="100%" />
 
 <img src="./assets/divider.svg" alt="" width="100%" />
 
@@ -94,7 +94,7 @@
     </td>
     <td valign="top" width="33%" align="left">
       <strong style="color:#6EE7B7">▣ STUDY-BUDDY</strong><br/>
-      Agentic learning ecosystem with Claude in the loop. <em>Flashcards, notes, exam microservices.</em>
+      Self-hosted learning platform with spaced-repetition flashcards, exam microservice, and progress tracking. <em>Built to outlast a subscription.</em>
     </td>
   </tr>
 </table>
