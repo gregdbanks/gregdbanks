@@ -174,7 +174,7 @@ def build() -> str:
     out.append(pixfont.render("@FLOGISTIX  ·  OKC", sx + 80, sy + 64, 2, INK))
 
     out.append(pixfont.render("LV", sx, sy + 92, 2, ACC2))
-    out.append(pixfont.render("47", sx + 40, sy + 92, 3, WARN))
+    out.append(pixfont.render("40", sx + 40, sy + 92, 3, WARN))
     out.append(pixfont.render("9-YR JOURNEY", sx + 110, sy + 92, 2, INK))
 
     # Bars
