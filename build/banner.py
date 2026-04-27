@@ -107,53 +107,40 @@ def cloud(x_start: int, y: int, dur: float, palette: str = INK, opacity: float =
 
 
 def sprite() -> str:
-    """16x18 pixel adventurer with subtle bob, walking translation applied by parent."""
-    s = 4  # scale
-    H_ = ACC1   # cape/hat
-    F = WARN    # face/skin
-    B = PRIM    # body (gi/armor)
-    L = INK     # eyes/highlights
-    K = SHADOW  # boots/outline
-    # Each row is 16 wide. Letters map to colors.
-    grid = [
-        "................",
-        "....HHHHHH......",
-        "...HHHHHHHH.....",
-        "..HHFFFFFFHH....",
-        "..HFFFFFFFFH....",
-        "..HFLFFFFLFH....",  # eyes
-        "..HFFFFFFFFH....",
-        "...HFFFFFFH.....",
-        "....HHHHHH......",
-        "...BBBBBBBB.....",
-        "..BBBBBBBBBB....",
-        "..BBLBBBBLBB....",  # belt buckle highlights
-        "..BBBBBBBBBB....",
-        "...BB.BB.BB.....",
-        "...BB...BB......",
-        "..KK.....KK.....",
-        ".KKK.....KKK....",
-        "................",
-    ]
-    cmap = {"H": H_, "F": F, "B": B, "L": L, "K": K}
+    """Pixelated logo head + casual-dev body. Combined 31w x 48h grid."""
+    from avatar import GRID as HEAD
+    from sprite_options import BODY_DEV as BODY
+    s = 2  # scale
+    cmap = {
+        "#": INK,      # head + neck (parchment)
+        "B": ACC2,     # t-shirt (wheat)
+        "A": DIM,      # jeans (smoke)
+        "S": SHADOW,   # shoes
+    }
     out = ['<g id="sprite-art">']
-    for ry, row in enumerate(grid):
+    for ry, row in enumerate(HEAD):
         for rx, ch in enumerate(row):
-            if ch in cmap:
-                out.append(rect(rx * s, ry * s, s, s, cmap[ch]))
-    # sword glint to the side
-    out.append(rect(13 * s, 8 * s, s, 4 * s, ACC2))
-    out.append(rect(13 * s, 8 * s, 2 * s, s, ACC2))
+            if ch == "#":
+                out.append(rect(rx * s, ry * s, s, s, INK))
+    head_h = len(HEAD)
+    for ry, row in enumerate(BODY):
+        for rx, ch in enumerate(row):
+            color = cmap.get(ch)
+            if color:
+                out.append(rect(rx * s, (ry + head_h) * s, s, s, color))
     out.append('</g>')
     return "".join(out)
 
 
 def walking_sprite() -> str:
-    """Sprite walking left-to-right with vertical bob."""
+    """Sprite walking left-to-right with vertical bob.
+    Sprite is 31x48 grid * 2px = 62x96. Feet land near ground line at y=256.
+    """
+    spawn_y = 256 - 48 * 2  # top so feet sit on ground
     return (
-        f'<g transform="translate(-90 200)">'
+        f'<g transform="translate(-70 {spawn_y})">'
         f'  <animateTransform attributeName="transform" type="translate" '
-        f'  values="-90 200; {W + 20} 200" dur="22s" repeatCount="indefinite"/>'
+        f'  values="-70 {spawn_y}; {W + 10} {spawn_y}" dur="22s" repeatCount="indefinite"/>'
         f'  <g>'
         f'    <animateTransform attributeName="transform" type="translate" '
         f'    values="0 0; 0 -3; 0 0; 0 -3; 0 0" dur="0.7s" repeatCount="indefinite"/>'

@@ -9,7 +9,7 @@ from pathlib import Path
 from palette import BG, INK, PRIM, ACC1, ACC2, WARN, DIM, PANEL, SHADOW
 import pixfont
 
-W, H = 1200, 720
+W, H = 1200, 780
 OUT = Path(__file__).parent.parent / "assets" / "ecosystems.svg"
 
 
