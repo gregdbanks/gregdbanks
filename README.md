@@ -23,7 +23,7 @@
 
 <img src="./assets/player-card.svg" alt="Player status card: Greg Banks · Full-Stack Engineer · Guild @Flogistix · OKC" width="100%" />
 
-> **One-liner.** I build local-first developer tools, retro-themed creative software, and self-hosted learning platforms. Nine years of shipping React, Node, and TypeScript at scale; lately spending evenings carving pixel-art editors and offline-first dev tooling.
+> **One-liner.** I build and operate production systems — nine years of React, Node, and TypeScript, with a bias toward owning the full path from API design through deploy and observability. I've shipped consumer apps, internal platforms, and developer tooling at scale. _(The retro arcade theme on this page is a personal taste, not a job title.)_
 
 <img src="./assets/divider.svg" alt="" width="100%" />
 
