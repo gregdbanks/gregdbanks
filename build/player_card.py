@@ -59,51 +59,49 @@ def stat_bar(x, y, w, h, pct, fill, label, value, label_color=INK):
     return "".join(out)
 
 
-def portrait(x, y):
-    """24x28 pixel hero portrait."""
-    s = 5
-    H_ = ACC1
-    F = WARN
-    B = PRIM
-    L = SHADOW
-    K = INK
-    M = ACC2
+def portrait(x, y, scale=6):
+    """Greg's logo, slightly pixelated. 31x32 grid extracted from his GitHub
+    avatar (hair + round glasses silhouette). '#' = ink pixel, '.' = transparent
+    so the underlying panel shows through."""
     grid = [
-        "........................",
-        ".......HHHHHHHHHH.......",
-        "......HHHHHHHHHHHH......",
-        ".....HHHHHHHHHHHHHH.....",
-        "....HHFFFFFFFFFFFFHH....",
-        "....HFFFFFFFFFFFFFFH....",
-        "....HFFLFFFFFFFFLFFH....",
-        "....HFFLFFFFFFFFLFFH....",
-        "....HFFFFFFFFFFFFFFH....",
-        "....HFFFFFFLLLLFFFFH....",  # mouth line
-        "....HFFFFFFFFFFFFFFH....",
-        ".....HFFFFFFFFFFFFH.....",
-        "......HHFFFFFFFFHH......",
-        "......HHHHHHHHHHHH......",
-        ".....BBBBBBBBBBBBBB.....",
-        "....BBMMMMMMMMMMMMBB....",  # collar mint
-        "...BBBBBBBBBBBBBBBBBB...",
-        "...BBKBBBBBBBBBBBBKBB...",
-        "...BBKBBBBBBBBBBBBKBB...",
-        "...BBBBBBBBBBBBBBBBBB...",
-        "....BBBBBBBBBBBBBBBB....",
-        ".....BBBBBBBBBBBBBB.....",
-        "......BBBB....BBBB......",
-        "......BBBB....BBBB......",
-        ".....KKKK......KKKK.....",
-        ".....KKKK......KKKK.....",
-        "........................",
-        "........................",
+        ".............##................",
+        "..........####...###...........",
+        ".........#####..####...........",
+        ".......############............",
+        "......####################.....",
+        "......####################.....",
+        ".....####################......",
+        "....#######################....",
+        "..#.########################...",
+        ".############################..",
+        ".#############################.",
+        ".#############################.",
+        ".##############################",
+        "###############################",
+        "###############################",
+        "###############################",
+        "##########..........###########",
+        "#######................########",
+        "#####....................######",
+        "####......................#####",
+        "###........................####",
+        "###.........................###",
+        "##.....####........####.....##.",
+        "##...##...##......##...##...##.",
+        "##...#......#....#......#...##.",
+        ".#..#.......######.......#...#.",
+        "...##........####........###...",
+        "...##........#..#........##....",
+        "....#........#..##.......#.....",
+        ".....#......#....#......##.....",
+        ".....##....##.....#....##......",
+        ".......####........#####.......",
     ]
-    cmap = {"H": H_, "F": F, "B": B, "L": L, "K": K, "M": M}
     out = []
     for ry, row in enumerate(grid):
         for rx, ch in enumerate(row):
-            if ch in cmap:
-                out.append(rect(x + rx * s, y + ry * s, s, s, cmap[ch]))
+            if ch == "#":
+                out.append(rect(x + rx * scale, y + ry * scale, scale, scale, INK))
     return "".join(out)
 
 
@@ -147,12 +145,17 @@ def build() -> str:
     out.append(rect(tab_x + 2, tab_y + 2, tab_w - 4, 18, BG))
     out.append(pixfont.render("--  STATUS  --", tab_x + 22, tab_y + 5, 2, INK))
 
-    # Portrait box
+    # Portrait box — Greg's logo, slightly pixelated
     px, py = 36, 50
     pw, ph = 220, 250
     out.append(panel(px, py, pw, ph, ACC1, SHADOW, 3))
-    out.append(rect(px + 8, py + 8, pw - 16, ph - 16, "#101025"))
-    out.append(portrait(px + 16, py + 16))
+    out.append(rect(px + 8, py + 8, pw - 16, ph - 16, PANEL))
+    # The grid is 31w x 32h. At scale 6 → 186x192. Center inside the inset.
+    inner_w, inner_h = pw - 16, ph - 16
+    logo_w, logo_h = 31 * 6, 32 * 6
+    lx = px + 8 + (inner_w - logo_w) // 2
+    ly = py + 8 + (inner_h - logo_h) // 2
+    out.append(portrait(lx, ly, scale=6))
     # corner LED
     out.append(heartbeat_dot(px + pw - 18, py + 10, ACC2))
 

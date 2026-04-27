@@ -1,20 +1,20 @@
 <!--
   README rendered on github.com/gregdbanks. Built from hand-authored SVGs
   in /assets — see /build/*.py for the generator scripts. Palette is locked:
-    BG #0F0F1B · INK #F8F8F2 · PRIM #5A6BFF · ACC1 #FF3E7E
-    ACC2 #6EE7B7 · WARN #FFD23F
+    BG #2D2A24 · INK #F0E8D0 · PRIM #5A8C7C · ACC1 #D88A7A
+    ACC2 #C8B987 · WARN #E6A35B
 -->
 
 <a name="top"></a>
 <img src="./assets/banner.svg" alt="Greg Banks — Dad, Developer, Oklahoma City" width="100%" />
 
 <p align="center">
-  <a href="#status"><img src="https://img.shields.io/badge/-STATUS-FF3E7E?style=for-the-badge&labelColor=0F0F1B&color=FF3E7E" alt="Status"></a>
-  <a href="#stack"><img src="https://img.shields.io/badge/-STACK-5A6BFF?style=for-the-badge&labelColor=0F0F1B&color=5A6BFF" alt="Stack"></a>
-  <a href="#ecosystems"><img src="https://img.shields.io/badge/-ECOSYSTEMS-FFD23F?style=for-the-badge&labelColor=0F0F1B&color=FFD23F" alt="Ecosystems"></a>
-  <a href="#cartridges"><img src="https://img.shields.io/badge/-CARTRIDGES-6EE7B7?style=for-the-badge&labelColor=0F0F1B&color=6EE7B7" alt="Cartridges"></a>
-  <a href="#stats"><img src="https://img.shields.io/badge/-STATS-F8F8F2?style=for-the-badge&labelColor=0F0F1B&color=F8F8F2" alt="Stats"></a>
-  <a href="#connect"><img src="https://img.shields.io/badge/-CONNECT-FF3E7E?style=for-the-badge&labelColor=0F0F1B&color=FF3E7E" alt="Connect"></a>
+  <a href="#status"><img src="https://img.shields.io/badge/-STATUS-FF3E7E?style=for-the-badge&labelColor=2D2A24&color=D88A7A" alt="Status"></a>
+  <a href="#stack"><img src="https://img.shields.io/badge/-STACK-5A6BFF?style=for-the-badge&labelColor=2D2A24&color=5A8C7C" alt="Stack"></a>
+  <a href="#ecosystems"><img src="https://img.shields.io/badge/-ECOSYSTEMS-FFD23F?style=for-the-badge&labelColor=2D2A24&color=E6A35B" alt="Ecosystems"></a>
+  <a href="#cartridges"><img src="https://img.shields.io/badge/-CARTRIDGES-6EE7B7?style=for-the-badge&labelColor=2D2A24&color=C8B987" alt="Cartridges"></a>
+  <a href="#stats"><img src="https://img.shields.io/badge/-STATS-F8F8F2?style=for-the-badge&labelColor=2D2A24&color=F8F8F2" alt="Stats"></a>
+  <a href="#connect"><img src="https://img.shields.io/badge/-CONNECT-FF3E7E?style=for-the-badge&labelColor=2D2A24&color=D88A7A" alt="Connect"></a>
 </p>
 
 <img src="./assets/divider.svg" alt="" width="100%" />
@@ -51,16 +51,16 @@
 
 <p align="center">
   <a href="https://github.com/gregdbanks">
-    <img height="180" src="https://github-readme-stats.vercel.app/api?username=gregdbanks&include_all_commits=true&count_private=true&show_icons=true&hide_border=true&bg_color=0F0F1B&title_color=5A6BFF&text_color=F8F8F2&icon_color=FF3E7E&ring_color=6EE7B7&hide_rank=false" alt="Greg's GitHub stats">
+    <img height="180" src="https://github-readme-stats.vercel.app/api?username=gregdbanks&include_all_commits=true&count_private=true&show_icons=true&hide_border=true&bg_color=2D2A24&title_color=5A8C7C&text_color=F0E8D0&icon_color=D88A7A&ring_color=C8B987&hide_rank=false" alt="Greg's GitHub stats">
   </a>
   <a href="https://github.com/gregdbanks">
-    <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gregdbanks&layout=compact&hide_border=true&langs_count=8&bg_color=0F0F1B&title_color=FFD23F&text_color=F8F8F2" alt="Top languages">
+    <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gregdbanks&layout=compact&hide_border=true&langs_count=8&bg_color=2D2A24&title_color=E6A35B&text_color=F0E8D0" alt="Top languages">
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/gregdbanks">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=gregdbanks&hide_border=true&background=0F0F1B&stroke=5A6BFF&ring=FF3E7E&fire=FFD23F&currStreakLabel=6EE7B7&dates=F8F8F2&sideLabels=F8F8F2&currStreakNum=F8F8F2&sideNums=F8F8F2&currStreakBackground=0F0F1B&theme=transparent" alt="Streak stats" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=gregdbanks&hide_border=true&background=2D2A24&stroke=5A8C7C&ring=D88A7A&fire=E6A35B&currStreakLabel=C8B987&dates=F0E8D0&sideLabels=F0E8D0&currStreakNum=F0E8D0&sideNums=F0E8D0&currStreakBackground=2D2A24&theme=transparent" alt="Streak stats" />
   </a>
 </p>
 
@@ -85,15 +85,15 @@
 <table align="center" border="0" cellpadding="14" cellspacing="0">
   <tr>
     <td valign="top" width="33%" align="left">
-      <strong style="color:#FF3E7E">▣ TILECRAFT</strong><br/>
+      <strong style="color:#D88A7A">▣ TILECRAFT</strong><br/>
       Phaser-based WYSIWYG tile editor for 16×16 maps. <em>Pixel-perfect grids, no anti-alias compromises.</em>
     </td>
     <td valign="top" width="33%" align="left">
-      <strong style="color:#5A6BFF">▣ HATCH + NEST</strong><br/>
+      <strong style="color:#5A8C7C">▣ HATCH + NEST</strong><br/>
       Personal cloud-ops console paired with an OS-native secrets vault. <em>The day-to-day AWS/Vercel work, off the public consoles.</em>
     </td>
     <td valign="top" width="33%" align="left">
-      <strong style="color:#6EE7B7">▣ STUDY-BUDDY</strong><br/>
+      <strong style="color:#C8B987">▣ STUDY-BUDDY</strong><br/>
       Self-hosted learning platform with spaced-repetition flashcards, exam microservice, and progress tracking. <em>Built to outlast a subscription.</em>
     </td>
   </tr>
@@ -106,13 +106,13 @@
 <img src="./assets/footer.svg" alt="Press start to connect — @gregdbanks · gregbanks.it · email · open to collabs" width="100%" />
 
 <p align="center">
-  <a href="https://github.com/gregdbanks"><img src="https://img.shields.io/badge/-GITHUB-FF3E7E?style=for-the-badge&logo=github&logoColor=F8F8F2&labelColor=0F0F1B" alt="GitHub" /></a>
+  <a href="https://github.com/gregdbanks"><img src="https://img.shields.io/badge/-GITHUB-FF3E7E?style=for-the-badge&logo=github&logoColor=F0E8D0&labelColor=2D2A24" alt="GitHub" /></a>
   &nbsp;
-  <a href="https://gregbanks.it"><img src="https://img.shields.io/badge/-GREGBANKS.IT-5A6BFF?style=for-the-badge&logo=safari&logoColor=F8F8F2&labelColor=0F0F1B" alt="Personal site" /></a>
+  <a href="https://gregbanks.it"><img src="https://img.shields.io/badge/-GREGBANKS.IT-5A6BFF?style=for-the-badge&logo=safari&logoColor=F0E8D0&labelColor=2D2A24" alt="Personal site" /></a>
   &nbsp;
-  <a href="mailto:gregdbanks20053@gmail.com"><img src="https://img.shields.io/badge/-EMAIL-FFD23F?style=for-the-badge&logo=gmail&logoColor=0F0F1B&labelColor=0F0F1B" alt="Email" /></a>
+  <a href="mailto:gregdbanks20053@gmail.com"><img src="https://img.shields.io/badge/-EMAIL-FFD23F?style=for-the-badge&logo=gmail&logoColor=2D2A24&labelColor=2D2A24" alt="Email" /></a>
   &nbsp;
-  <a href="https://github.com/gregdbanks?tab=repositories&q=&type=public&language=&sort=stargazers"><img src="https://img.shields.io/badge/-OPEN_TO_COLLABS-6EE7B7?style=for-the-badge&logo=githubsponsors&logoColor=0F0F1B&labelColor=0F0F1B" alt="Open to collabs" /></a>
+  <a href="https://github.com/gregdbanks?tab=repositories&q=&type=public&language=&sort=stargazers"><img src="https://img.shields.io/badge/-OPEN_TO_COLLABS-6EE7B7?style=for-the-badge&logo=githubsponsors&logoColor=2D2A24&labelColor=2D2A24" alt="Open to collabs" /></a>
 </p>
 
 <p align="center">
