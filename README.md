@@ -14,14 +14,6 @@
   <img alt="Animated snake eating Greg's contribution graph" src="https://raw.githubusercontent.com/gregdbanks/gregdbanks/output/github-snake-dark.svg" width="100%" />
 </picture>
 
-<a name="status"></a>
-
-<img src="./assets/player-card.svg" alt="Player status card: Greg Banks · Full-Stack Engineer · Guild @Flogistix · OKC" width="100%" />
-
-> **One-liner.** I build and operate production systems — nine years of React, Node, and TypeScript, with a bias toward owning the full path from API design through deploy and observability. I've shipped consumer apps, internal platforms, and developer tooling at scale. _(The retro arcade theme on this page is a personal taste, not a job title.)_
-
-<img src="./assets/divider.svg" alt="" width="100%" />
-
 <a name="stack"></a>
 
 <img src="./assets/skill-tree.svg" alt="Skill constellation: languages, front-end, back-end, platform & AI" width="100%" />
@@ -63,7 +55,9 @@
 
 <a name="connect"></a>
 
-<img src="./assets/footer.svg" alt="Press start to connect — @gregdbanks · gregbanks.it · email · open to collabs" width="100%" />
+<img src="./assets/player-card.svg" alt="Player status card: Greg Banks · Full-Stack Engineer · Guild @Flogistix · OKC" width="100%" />
+
+> **One-liner.** I build and operate production systems — nine years of React, Node, and TypeScript, with a bias toward owning the full path from API design through deploy and observability. I've shipped consumer apps, internal platforms, and developer tooling at scale. _(The retro arcade theme on this page is a personal taste, not a job title.)_
 
 <p align="center">
   <a href="https://github.com/gregdbanks"><img src="https://img.shields.io/badge/-GITHUB-FF3E7E?style=for-the-badge&logo=github&logoColor=F0E8D0&labelColor=2D2A24" alt="GitHub" /></a>
