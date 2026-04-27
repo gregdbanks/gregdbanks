@@ -26,12 +26,6 @@ def build() -> str:
     out.append(rect(cx - 4, dash_y - 6, 8, 16, ACC1))
     out.append(rect(cx - 2, dash_y - 8, 4, 20, ACC1))
     out.append(rect(cx - 2, dash_y - 2, 4, 8, INK))
-    # sweeping highlight bar
-    out.append(
-        f'<rect x="-80" y="{dash_y}" width="80" height="4" fill="{ACC2}" opacity="0.85">'
-        f'<animate attributeName="x" from="-80" to="{W}" dur="6s" repeatCount="indefinite"/>'
-        f'</rect>'
-    )
     svg = (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
         f'width="100%" role="presentation" shape-rendering="crispEdges">'
