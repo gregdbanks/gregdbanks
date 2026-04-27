@@ -7,7 +7,8 @@ from palette import BG, INK, PRIM, ACC1, ACC2, WARN, DIM, PANEL, SHADOW
 import pixfont
 
 
-W, H = 1200, 320
+W, H = 1200, 400
+GROUND_Y = 336  # baseline where city silhouette meets ground
 OUT = Path(__file__).parent.parent / "assets" / "banner.svg"
 
 
@@ -22,7 +23,7 @@ def starfield(seed: int = 7) -> str:
     out = []
     for i in range(90):
         x = rng.randint(0, W - 4)
-        y = rng.randint(8, 180)
+        y = rng.randint(8, GROUND_Y - 60)
         size = rng.choice([2, 2, 2, 4])  # mostly small
         color = rng.choice([INK, INK, INK, ACC2, PRIM])
         delay = rng.uniform(0, 4)
@@ -66,23 +67,24 @@ def skyline() -> str:
         (1084, 30, 54), (1120, 18, 32), (1144, 26, 46),
     ]
     for x, w, h in back:
-        out.append(rect(x, 256 - h, w, h, DIM))
+        out.append(rect(x, GROUND_Y - h, w, h, DIM))
         # window pattern (1 in 3)
-        for wy in range(256 - h + 6, 252, 8):
+        for wy in range(GROUND_Y - h + 6, GROUND_Y - 4, 8):
             for wx in range(x + 4, x + w - 3, 6):
                 if (wx + wy) % 16 == 0:
                     out.append(rect(wx, wy, 2, 2, WARN, opacity="0.55"))
 
     # tallest spire — antenna with blinking aircraft light
-    out.append(rect(376, 156, 4, 30, DIM))
+    spire_top = GROUND_Y - 100
+    out.append(rect(376, spire_top, 4, 30, DIM))
     out.append(
-        f'<rect x="374" y="150" width="8" height="6" fill="{ACC1}">'
+        f'<rect x="374" y="{spire_top - 6}" width="8" height="6" fill="{ACC1}">'
         f'<animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/>'
         f'</rect>'
     )
     # ground line
-    out.append(rect(0, 256, W, 4, PANEL))
-    out.append(rect(0, 260, W, 60, BG))
+    out.append(rect(0, GROUND_Y, W, 4, PANEL))
+    out.append(rect(0, GROUND_Y + 4, W, H - GROUND_Y - 4, BG))
     return "".join(out)
 
 
@@ -137,7 +139,7 @@ def walking_sprite() -> str:
     """Sprite walking left-to-right with vertical bob.
     Sprite is 31x48 grid * 2px = 62x96. Feet land near ground line at y=256.
     """
-    spawn_y = 256 - 48 * 2  # top so feet sit on ground
+    spawn_y = GROUND_Y - 48 * 2  # top so feet sit on ground
     return (
         f'<g transform="translate(-70 {spawn_y})">'
         f'  <animateTransform attributeName="transform" type="translate" '
@@ -211,9 +213,9 @@ def build() -> str:
     body.append(rect(0, 0, W, H, BG))
 
     # vertical gradient hint via 3 bands in palette
-    body.append(rect(0, 0, W, 80, "#0B0B16"))
-    body.append(rect(0, 80, W, 100, "#0F0F1B"))
-    body.append(rect(0, 180, W, 80, "#13132A"))
+    body.append(rect(0, 0, W, 100, "#0B0B16"))
+    body.append(rect(0, 100, W, 140, "#0F0F1B"))
+    body.append(rect(0, 240, W, GROUND_Y - 240, "#13132A"))
 
     # parallax stars
     body.append(starfield())
